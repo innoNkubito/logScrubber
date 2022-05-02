@@ -1,0 +1,21 @@
+{
+  "name": "scrubber",
+  "version": "1.0.0",
+  "description": "Scrub module that cleans up sensitive user data ",
+  "license": "MIT",
+  "scripts": {
+    "scrub:file": "ts-node .",
+    "gen:validations": "ts-to-zod src/types.ts src/zodValidator.ts",
+    "test": "jest"
+  },
+  "dependencies": {
+    "typescript": "^4.6.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "27.0.0",
+    "ts-jest": "^27.1.4",
+    "ts-node": "^10.7.0",
+    "ts-to-zod": "^1.10.0"
+  }
+}
